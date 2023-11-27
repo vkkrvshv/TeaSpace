@@ -1,0 +1,107 @@
+.drink {
+    margin-bottom: 72px;
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: rgba(112, 166, 107, 0.3);
+        min-height: 584px;
+        width: 100vw;
+        left:0;
+        right:0;
+        position: absolute;
+    }
+
+    // .drink__info
+
+    &__info {
+        display: inline-block;
+        position: relative;
+        width: 527px;
+        margin: 100px 76px 100px 110px;
+    }
+
+    // .drink__img
+
+    &__img {
+        display: inline-block;
+        width: 423px;
+        height: 440px;
+        position: absolute;
+        margin-top: 72px;
+    }
+}
+
+.icon {
+
+    // .icon__taste
+
+    &__taste::before, &__energy::before, &__ingredient::before, &__topping::before {
+        content: "";
+        display: block;
+        width: 1.7em;
+        height: 1.7em;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: calc(100% - 40px/2 - 490px);
+    }
+
+    &__taste {
+        list-style: none;
+        font-size: 1.5em;
+        width: 526px;
+        line-height: 4em;
+        position: relative;
+        padding-left: 80px;
+
+        &::before {
+            background: url("../images/taste_icon.svg") no-repeat center;
+        }
+    }
+
+    // .icon__topping
+
+    &__topping {
+        list-style: none;
+        font-size: 1.5em;
+        width: 526px;
+        line-height: 4em;
+        position: relative;
+        padding-left: 80px;
+
+        &::before {
+            background: url("../images/flavour_icon.svg") no-repeat center;
+        }
+    }
+
+    // .icon__ingredient
+
+    &__ingredient {
+        list-style: none;
+        font-size: 1.5em;
+        width: 526px;
+        line-height: 4em;
+        position: relative;
+        padding-left: 80px;
+
+        &::before {
+            background: url("../images/nature_icon.svg") no-repeat center;
+        }
+    }
+
+    // .icon__energy
+
+    &__energy {
+        list-style: none;
+        font-size: 1.5em;
+        width: 526px;
+        line-height: 4em;
+        position: relative;
+        padding-left: 80px;
+
+        &::before {
+            background: url("../images/energy_icon.svg") no-repeat center;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import url(../fonts/manrope/manrope.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    max-width: 1920px;
+    min-height: 2716px;
+    background: #E9E6D9;
+    font-family: "manrope";
+    letter-spacing: 0.04em;
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 1920px;
+    height: 160px;
+    left: calc(50% - 1920px/2);
+    top: 0;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+.content {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgba(112, 166, 107, 0.3);
+    min-height: 300px;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main__button {
+    display: inline-block;
+    background: #70A66B;
+    border-radius: 25px;
+    padding: 0.875em 3.313em;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgba(233, 230, 217, 1);
+}
+
+@import "./header";
+@import "./hero";
+@import "./drink";
+@import "./statistics";
+@import "./news";
+@import "./footer";

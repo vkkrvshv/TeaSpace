@@ -1,0 +1,72 @@
+.footer {
+    background-color: rgba(112, 166, 107, 0.3);
+    min-height: 300px;
+    font-size: 1.5em;
+
+    // .footer__bar
+
+    &__bar {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-areas: "main drinks tea info"
+                            "phone phone email email";
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 40px;
+        gap: 2em 0;
+        padding: 32px 130px;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: block;
+            background: url(../images/footer_green_bg.svg) no-repeat;
+            background-size: cover;
+            min-height: 130px;
+            width: 1296px;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        display: block;
+        padding: 24px 0 16px 0;
+        margin: 0 auto;
+    }
+}
+
+.main {
+    grid-area: main;
+}
+
+.phone {
+    grid-area: phone;
+    margin-left: 7em;
+}
+.email {
+    grid-area: email;
+    margin-right: 7em;
+}
+
+.phone__image, .email__image {
+    float: left;
+    margin: 0.3em 10px 0 0;
+}
+.media {
+    display: flex;
+    width: 123px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}

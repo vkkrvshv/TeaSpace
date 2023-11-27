@@ -1,0 +1,40 @@
+.statistics {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-end;
+
+    // .statistics__age
+
+    &__age {
+        text-align: center;
+        font-size: 1.5em;
+        color: #43945E;
+    }
+
+    // .statistics__image
+
+    &__image {
+        display: block;
+        margin: 0 auto 24px;
+    }
+
+    // .statistics__spots
+
+    &__spots {
+        text-align: center;
+        font-size: 1.5em;
+        color: #43945E;
+    }
+
+    // .statistics__sell
+
+    &__sell {
+        text-align: center;
+        font-size: 1.5em;
+        color: #43945E;
+    }
+}
+.quantity {
+    font-weight: 600;
+}

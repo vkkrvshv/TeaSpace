@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/carousel.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <nav class="header__bar">
+                <a class="bar__link contacts" href="#">Контакты</a>
+                <a class="bar__logo" href="#"><img src="./images/logo.svg" alt="logo"></a>
+                <a class="bar__link drinks" href="#">Наши напитки</a>
+                <a class="bar__link tea" href="#">Наш чай</a>
+                <a class="bar__link info" href="#">О нас</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="hero__block">
+                <img class="hero__image" src="./images/hero image.png" alt="hero_image">
+                <p class="hero__title">Tea Space</p>
+                <p class="hero__subtitle">напиток на основе чая, <br>который украсит Ваш день</p>
+                <a class="hero main__button" href="#">Смотреть меню</a>
+            </div>
+            <div class="drink">
+                <ul class="drink__info">
+                    <li class="icon__taste">Новый, космический вкус чая</li>
+                    <li class="icon__topping">Топпинги на любой вкус</li>
+                    <li class="icon__ingredient">Только натуральные ингредиенты</li>
+                    <li class="icon__energy">Полезная энергия</li>
+                </ul>
+                <img class="drink__img" src="./images/pic.svg" alt="tea">
+            </div>
+            <div class="statistics">
+                <div class="statistics__age">
+                    <img class="statistics__image" src="./images/trust.svg" alt="trust_icon">
+                    <p class="quantity">5</p>
+                    <p>лет на рынке</p>
+                </div>
+                <div class="statistics__spots">
+                    <img class="statistics__image" src="./images/map.svg" alt="map_icon">
+                    <p class="quantity">10</p>
+                    <p>точек по России</p>
+                </div>
+                <div class="statistics__sell">
+                    <img class="statistics__image" src="./images/cup.svg" alt="cup_icon">
+                    <p class="quantity">2.167.092</p>
+                    <p>напитков продано</p>
+                </div>
+            </div>
+            <div class="left slider" onclick="plusSlides(-1)"></div>
+            <div class="right slider" onclick="plusSlides(1)"></div>
+            <div class="news">
+                <p class="news__title">Space Tea в Санкт-Петербурге!</p>
+                <p class="news__text">В ТЦ “Галерея” недавно открылась чайная Space Tea.</p>
+                <p class="news__subtext">Наша чайная предлагает Вам большой выбор фирменных напитков, 
+                    приготовленных по особому рецепту.</p>
+                <a class="news__btn main__button" href="#">Контакты</a>
+                <img class="news__image" src="./images/cafe.png" alt="cafe_photo">
+            </div>
+            <div class="news">
+                <p class="news__title">Space Tea в Краснодаре!</p>
+                <p class="news__text">Мы открылись в ТРК "Галактика"!</p>
+                <p class="news__subtext">Заходите к нам в чайную на 2 этаже и приводите друзей.</p>
+                <a class="news__btn main__button" href="#">Контакты</a>
+                <img class="news__image" src="./images/krasnodar.png" alt="cafe_photo">
+            </div>
+            <div class="news">
+                <p class="news__title">Space Tea в Екатеринбурге!</p>
+                <p class="news__text">Мы открылись в ТРЦ "Гринвич"!</p>
+                <p class="news__subtext">Заходите к нам в чайную на 3 этаже и приводите друзей.</p>
+                <a class="news__btn main__button" href="#">Контакты</a>
+                <img class="news__image" src="./images/cafe.png" alt="cafe_photo">
+            </div>
+            <div class="news">
+                <p class="news__title">Space Tea в Томске!</p>
+                <p class="news__text">Мы открылись в ТРЦ "Манеж"!</p>
+                <p class="news__subtext">Заходите к нам в чайную на 2 этаже и приводите друзей.</p>
+                <a class="news__btn main__button" href="#">Контакты</a>
+                <img class="news__image" src="./images/krasnodar.png" alt="cafe_photo">
+            </div>
+            <div class="bottom__sliders">
+                <div class="dot" onclick="currentSlide(1)"></div> 
+                <div class="dot" onclick="currentSlide(2)"></div> 
+                <div class="dot" onclick="currentSlide(3)"></div> 
+                <div class="dot" onclick="currentSlide(4)"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <nav class="footer__bar">
+                <a class="bar__link main" href="#">Главная</a>
+                <a class="bar__link drinks" href="#">Наши напитки</a>
+                <a class="bar__link tea" href="#">Наш чай</a>
+                <a class="bar__link info" href="#">О нас</a>
+                <div class="phone">
+                    <img class="phone__image" src="./images/phone_icon.svg" alt="phone_icon">
+                    <a class="bar__link" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                </div>
+                <div class="email">
+                    <img class="email__image" src="./images/mail_icon.svg" alt="email_icon">
+                    <a class="bar__link" href="mailto:teaspace@info.ru">teaspace@info.ru</a>
+                </div>
+            </nav>
+            <div class="footer__contacts">
+                <img class="footer__logo" src="./images/whitelogo.svg" alt="logo">
+                <div class="media">
+                    <a href="#"><img src="./images/instagram_icon.svg" alt="inst_icon"></a>
+                    <a href="#"><img src="./images/vk_icon.svg" alt="vk_icon"></a>
+                    <a href="#"><img src="./images/telegram.svg" alt="tg_icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

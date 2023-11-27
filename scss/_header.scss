@@ -1,0 +1,60 @@
+.header {
+
+    // .header__bar
+
+    &__bar {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-areas: "logo contacts contacts contacts"
+                            "logo drinks tea info";
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: auto 196px 196px 196px;
+        grid-template-rows: auto 64px;
+        gap: 1.25em 0;
+    }
+}
+
+.bar {
+
+    // .bar__link
+
+    &__link {
+        color: #000;
+        font-weight: 500;
+    }
+
+    // .bar__logo
+
+    &__logo {
+        display: block;
+        height: 4em;
+        grid-area: logo;
+        align-self: end;
+        justify-self: start;
+    }
+}
+
+.contacts {
+    display: inline-block;
+    position: relative;
+    padding: 0.65em 1.65em;
+    background: #70A66B;
+    border-radius: 0px 0px 25px 25px;
+    font-weight: 600;
+    color: rgba(233, 230, 217, 1);
+    grid-area: contacts;
+    justify-self: end;
+}
+
+.drinks {
+    grid-area: drinks;
+}
+
+.tea {
+    grid-area: tea;
+}
+
+.info {
+    grid-area: info;
+}

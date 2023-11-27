@@ -1,0 +1,414 @@
+@import url(../fonts/manrope/manrope.css);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  max-width: 1920px;
+  min-height: 2716px;
+  background: #E9E6D9;
+  font-family: "manrope";
+  letter-spacing: 0.04em;
+  overflow-x: hidden;
+}
+
+header {
+  max-width: 1920px;
+  height: 160px;
+  left: calc(50% - 960px);
+  top: 0;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.content {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: rgba(112, 166, 107, 0.3);
+  min-height: 300px;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main__button {
+  display: inline-block;
+  background: #70A66B;
+  border-radius: 25px;
+  padding: 0.875em 3.313em;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(233, 230, 217);
+}
+
+.header__bar {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: "logo contacts contacts contacts" "logo drinks tea info";
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto 196px 196px 196px;
+  grid-template-rows: auto 64px;
+  gap: 1.25em 0;
+}
+
+.bar__link {
+  color: #000;
+  font-weight: 500;
+}
+.bar__logo {
+  display: block;
+  height: 4em;
+  grid-area: logo;
+  align-self: end;
+  justify-self: start;
+}
+
+.contacts {
+  display: inline-block;
+  position: relative;
+  padding: 0.65em 1.65em;
+  background: #70A66B;
+  border-radius: 0px 0px 25px 25px;
+  font-weight: 600;
+  color: rgb(233, 230, 217);
+  grid-area: contacts;
+  justify-self: end;
+}
+
+.drinks {
+  grid-area: drinks;
+}
+
+.tea {
+  grid-area: tea;
+}
+
+.info {
+  grid-area: info;
+}
+
+.hero__block {
+  position: relative;
+  margin-bottom: 64px;
+}
+.hero__block::before {
+  content: "";
+  display: block;
+  background: no-repeat url("../images/starsblock.svg");
+  background-size: contain;
+  width: 214px;
+  height: 376px;
+  position: absolute;
+  top: 288px;
+  left: 0;
+}
+.hero__block::after {
+  content: "";
+  display: block;
+  background: no-repeat url("../images/starsblock.svg");
+  width: 214px;
+  height: 376px;
+  background-size: contain;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.hero__image {
+  width: 16em;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 16px;
+}
+.hero__title {
+  font-weight: 600;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.hero__subtitle {
+  display: block;
+  width: 636px;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0 auto 46px;
+}
+
+.main__button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.drink {
+  margin-bottom: 72px;
+}
+.drink::before {
+  content: "";
+  display: block;
+  background-color: rgba(112, 166, 107, 0.3);
+  min-height: 584px;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+.drink__info {
+  display: inline-block;
+  position: relative;
+  width: 527px;
+  margin: 100px 76px 100px 110px;
+}
+.drink__img {
+  display: inline-block;
+  width: 423px;
+  height: 440px;
+  position: absolute;
+  margin-top: 72px;
+}
+
+.icon__taste::before, .icon__energy::before, .icon__ingredient::before, .icon__topping::before {
+  content: "";
+  display: block;
+  width: 1.7em;
+  height: 1.7em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% - 20px - 490px);
+}
+.icon__taste {
+  list-style: none;
+  font-size: 1.5em;
+  width: 526px;
+  line-height: 4em;
+  position: relative;
+  padding-left: 80px;
+}
+.icon__taste::before {
+  background: url("../images/taste_icon.svg") no-repeat center;
+}
+.icon__topping {
+  list-style: none;
+  font-size: 1.5em;
+  width: 526px;
+  line-height: 4em;
+  position: relative;
+  padding-left: 80px;
+}
+.icon__topping::before {
+  background: url("../images/flavour_icon.svg") no-repeat center;
+}
+.icon__ingredient {
+  list-style: none;
+  font-size: 1.5em;
+  width: 526px;
+  line-height: 4em;
+  position: relative;
+  padding-left: 80px;
+}
+.icon__ingredient::before {
+  background: url("../images/nature_icon.svg") no-repeat center;
+}
+.icon__energy {
+  list-style: none;
+  font-size: 1.5em;
+  width: 526px;
+  line-height: 4em;
+  position: relative;
+  padding-left: 80px;
+}
+.icon__energy::before {
+  background: url("../images/energy_icon.svg") no-repeat center;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-end;
+}
+.statistics__age {
+  text-align: center;
+  font-size: 1.5em;
+  color: #43945E;
+}
+.statistics__image {
+  display: block;
+  margin: 0 auto 24px;
+}
+.statistics__spots {
+  text-align: center;
+  font-size: 1.5em;
+  color: #43945E;
+}
+.statistics__sell {
+  text-align: center;
+  font-size: 1.5em;
+  color: #43945E;
+}
+
+.quantity {
+  font-weight: 600;
+}
+
+.news {
+  display: grid;
+  grid-template-areas: "lslider title image rslider" "lslider text image rslider" "lslider subtext image rslider" "lslider button image rslider";
+  justify-items: start;
+  align-items: center;
+  align-content: start;
+  gap: 1.5em 2.5em;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news__title {
+  grid-area: title;
+  font-size: 2.5em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.news__text {
+  grid-area: text;
+  font-size: 1.5em;
+}
+.news__subtext {
+  grid-area: subtext;
+  font-size: 1.5em;
+}
+.news__btn {
+  grid-area: button;
+  left: 0;
+  transform: none;
+}
+.news__image {
+  grid-area: image;
+  margin-left: 0.625em;
+}
+
+.left {
+  left: 13px;
+  top: 336px;
+}
+
+.slider {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 57px;
+  height: 57px;
+  background: 18px url(../images/slider_arrow.svg) no-repeat;
+  cursor: pointer;
+}
+.slider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  border-radius: 50px;
+  background: rgba(233, 230, 217, 0.1);
+}
+.slider:hover::before {
+  background: rgba(231, 231, 231, 0.6);
+}
+
+.right {
+  left: 1226px;
+  top: 280px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.bottom__sliders {
+  display: flex;
+  justify-content: space-between;
+  width: 170px;
+  margin: 24px auto 64px;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background: rgba(112, 166, 107, 0.5);
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background: #70A66B;
+}
+
+.footer {
+  background-color: rgba(112, 166, 107, 0.3);
+  min-height: 300px;
+  font-size: 1.5em;
+}
+.footer__bar {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: "main drinks tea info" "phone phone email email";
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 40px;
+  gap: 2em 0;
+  padding: 32px 130px;
+}
+.footer__contacts {
+  position: relative;
+  z-index: 1;
+}
+.footer__contacts::before {
+  content: "";
+  display: block;
+  background: url(../images/footer_green_bg.svg) no-repeat;
+  background-size: cover;
+  min-height: 130px;
+  width: 1296px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.footer__logo {
+  display: block;
+  padding: 24px 0 16px 0;
+  margin: 0 auto;
+}
+
+.main {
+  grid-area: main;
+}
+
+.phone {
+  grid-area: phone;
+  margin-left: 7em;
+}
+
+.email {
+  grid-area: email;
+  margin-right: 7em;
+}
+
+.phone__image, .email__image {
+  float: left;
+  margin: 0.3em 10px 0 0;
+}
+
+.media {
+  display: flex;
+  width: 123px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
